@@ -1,0 +1,38 @@
+.wrapper {
+    background: #ffffff;
+    /* padding: 20px; */
+    z-index: 0;
+    border-radius: 10px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    bottom: 10%;
+    right: 10%;
+}
+
+.wrapper:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section,
+aside {
+    float: left;
+    width: 46%;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.item {
+    border-left: none !important;
+    border-right: 1px solid black !important;
+}
+
+.columns:after {
+    display: block;
+    content: "";
+    clear: both;
+    margin: auto;
+}
