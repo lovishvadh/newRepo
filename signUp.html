@@ -13,7 +13,7 @@
 
 <body>
     <!-- middle aligned center aligned -->
-    <div class="ui middle aligned center aligned grid">
+    <div class="ui headHidden middle aligned center aligned grid">
         <div class="column">
             <div class="ui fluid image">
                 <img class="logoImage" src="./Assets/Images/CurryCoins-color.png">
@@ -23,25 +23,25 @@
                     <div class="two fields">
                         <div class="field">
                             <label>First name</label>
-                            <input placeholder="First Name" type="text">
+                            <input placeholder="First Name" type="text" id="fname">
                         </div>
                         <div class="field">
                             <label>Last name</label>
-                            <input placeholder="Last Name" type="text">
+                            <input placeholder="Last Name" type="text" id="lname">
                         </div>
                     </div>
                     <div class="field">
                         <label>Email</label>
                         <div class="ui left icon input">
                             <i class="user icon"></i>
-                            <input type="text" name="email" placeholder="E-mail address">
+                            <input type="text" name="email" placeholder="E-mail address" id="email">
                         </div>
                     </div>
                     <div class="field">
                         <label>Username</label>
                         <div class="ui left icon input">
                             <i class="user icon"></i>
-                            <input type="text" name="username" placeholder="Username">
+                            <input type="text" name="username" placeholder="Username" id="usnn">
                         </div>
                     </div>
                     <div class="field">
@@ -54,7 +54,7 @@
                     <div class="field">
                         <label>Confirm Password</label>
                         <div class="ui right icon input">
-                            <input type="password" name="confirm password" id="sipassword2" placeholder="Confirm Password">
+                            <input type="password" name="confirmpassword" id="sipassword2" placeholder="Confirm Password">
                             <div class="hoverIcon"><i class="eye icon iconOfeye2"></i></div>
                         </div>
                     </div>
@@ -62,13 +62,15 @@
                         <label>Referral Code (Optional)</label>
                         <div class="ui left icon input">
                             <i class="user icon"></i>
-                            <input type="text" name="Referral Code" placeholder="Referral Code">
+                            <input type="text" name="ReferralCode" placeholder="Referral Code" id="referralCode">
                         </div>
                     </div>
-                    <div class="ui fluid large green submit button">Sign Up</div>
+                    <button class="ui fluid large green submit button" id="signUp" type="submit">Sign Up</button>
                 </div>
 
                 <div class="ui error message"></div>
+                <div class="ui message" id="error" style="display: none; color: red;"></div>
+
 
             </form>
 
@@ -77,6 +79,27 @@
             </div>
         </div>
     </div>
+    <div class="ui middle afterDiv aligned center aligned grid" style="display: none;">
+        <div class="column">
+            <div class="ui fluid image">
+                <img class="logoImage" src="./Assets/Images/CurryCoins-color.png">
+            </div>
+            <form class="ui large form signUp">
+                <div class="ui stacked segment">
+                    <div class="field">
+                        <label>Enter OTP</label>
+                        <div class="ui left icon input">
+                            <input type="text" name="EnterOTP" placeholder="OTP" id="otp">
+                        </div>
+                    </div>
+                    <div class="ui fluid large green submit button" id="verifyOtp">Verify</div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="ui message" id="error2" style="display: none; color: red;"></div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
     <script src="./Assets/JS/signUp.js"></script>
 </body>

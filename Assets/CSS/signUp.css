@@ -35,3 +35,10 @@ label {
     height: auto !important;
     margin: auto !important;
 }
+#error2 {
+    position: absolute !important;
+    left: 0 !important; 
+    right: 0 !important;
+    bottom: 0 !important;
+    text-align: center !important;
+}
