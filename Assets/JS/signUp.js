@@ -25,4 +25,25 @@ $(document)
                     }
                 }
             });
+        let cfField1 = document.querySelector("#sipassword1");
+        let cfField2 = document.querySelector("#sipassword2");
+        $(".iconOfeye1").on('click', function() {
+
+            if (cfField1.type === "text") {
+                cfField1.type = 'password';
+            } else {
+                cfField1.type = 'text';
+            }
+        });
+        $(".iconOfeye2").on('click', function() {
+
+            if (cfField2.type === "text") {
+                cfField2.type = 'password';
+            } else {
+                cfField2.type = 'text';
+            }
+        });
+        $('#signUp').on('submit', function() {
+            alert('hello Baby!');
+        });
     });
