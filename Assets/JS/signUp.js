@@ -14,6 +14,20 @@ $(document)
                             type: 'email',
                             prompt: 'Please enter a valid e-mail'
                         }]
+                    }, 
+                    fname: {
+                        identifier: 'fname',
+                        rules: [{
+                            type: 'empty',
+                            prompt: 'Please enter your First Name '
+                        },]
+                    }, 
+                    lname: {
+                        identifier: 'lname',
+                        rules: [{
+                            type: 'empty',
+                            prompt: 'Please enter your Last Name'
+                        },]
                     },
                     password: {
                         identifier: 'password',
