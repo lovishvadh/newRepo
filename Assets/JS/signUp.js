@@ -106,15 +106,22 @@ $(document)
                     $('form').form('reset');
                     $('#signUp').css('visibility', 'visible');
 
-                    $('#error').css(`display`,'block');
+                    $('#erroRContainer').css(`display`,'block');
 
                     data.data.errors.forEach(element => {
-                        $('#error').append(`<h4>${element}<h4>`);
+                        $('#error').append(`<li>${element}</li>`);
                     });
                 }
                     
-            }
+            },
+            error: function() { 
+                $('#erroRContainer').css(`display`,'block');
+                $('#error').append(`<li>Internal server error. Please retry after some time.</li>`);
+            $('#signUp').css('visibility', 'visible');
+                
+            } 
               });
+
             }
             
         $('#verifyOtp').on('click', function(event) {
@@ -140,10 +147,10 @@ $(document)
                     // $('.confirmation').css('display','flex');
                 } else {
                     $('#verifyOtp').css('visibility', 'visible');
-                    $('#error2').css(`display`,'block');
+                    $('#error2cointainer').css(`display`,'block');
 
                     data.data.errors.forEach(element => {
-                        $('#error2').append(`<h4>${element}<h4>`);
+                        $('#error2').append(`<li>${element}</li>`);
                     });
                 }
                     

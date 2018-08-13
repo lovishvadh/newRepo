@@ -42,3 +42,7 @@ label {
     bottom: 0 !important;
     text-align: center !important;
 }
+
+.ui.grid {
+    display: grid !important;
+}
