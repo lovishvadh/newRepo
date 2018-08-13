@@ -46,3 +46,7 @@ label {
 .ui.grid {
     display: grid !important;
 }
+
+.ui.input {
+ color: black !important;
+}

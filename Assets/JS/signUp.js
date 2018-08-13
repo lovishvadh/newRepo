@@ -93,7 +93,7 @@ $(document)
             }
             globalObject = obj;
             $.ajax({
-                url: 'http://localhost:9001/send-signup-email-otp-full',
+                url: 'http://trader.currycoins.com/send-signup-email-otp-full',
                 contentType: "application/json",
                 type: "post",
                 data: JSON.stringify(obj),
@@ -134,7 +134,7 @@ $(document)
             }
             
             $.ajax({
-                url: 'http://localhost:9001/complete-signup-full',
+                url: 'http://trader.currycoins.com/complete-signup-full',
                 contentType: "application/json",
                 type: "post",
                 data: JSON.stringify(obj),
